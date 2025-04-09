@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif; /* 设置全局字体 */
+}
+
+.layui-container {
+    padding: 20px; /* 设置容器内边距 */
+}
+
+#content {
+    margin-top: 20px; /* 设置内容区域的上外边距 */
+}
+
+/* 导航项自适应布局 */
+.layui-nav-item {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+    .layui-nav-item {
+        flex: 1 1 100%; /* 页面缩小到480px以下时，每行1个导航项 */
+    }
+}
+
+/* 内容项自适应布局 */
+#content .layui-col {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px; /* 添加上下间距 */
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+    #content .layui-col {
+        flex: 1 1 100%; /* 页面缩小到480px以下时，每行1个内容项 */
+    }
+}
